@@ -19,7 +19,7 @@ gem 'vcap_common'
 gem 'steno', '~> 1.1.0'
 
 gem 'uuidtools'
-gem 'nokogiri', '~> 1.6.2'
+gem 'nokogiri', '~> 1.18.4'
 gem 'vmstat'
 
 gem 'loggregator_emitter'
