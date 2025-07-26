@@ -19,7 +19,7 @@ gem 'vcap_common'
 gem 'steno', '~> 1.1.0'
 
 gem 'uuidtools'
-gem 'nokogiri', '~> 1.6.2'
+gem 'nokogiri', '~> 1.18.9'
 gem 'vmstat'
 
 gem 'loggregator_emitter'
@@ -29,7 +29,7 @@ gem 'sys-filesystem'
 group :test do
   gem 'codeclimate-test-reporter', require: false
   gem 'ci_reporter'
-  gem 'foreman'
+  gem 'foreman', '>= 0.62.0'
   gem 'net-ssh'
   gem 'patron'
   gem 'rack-test'
