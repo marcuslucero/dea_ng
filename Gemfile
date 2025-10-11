@@ -8,15 +8,15 @@ gem 'em-warden-client', git: 'https://github.com/cloudfoundry/warden.git'
 gem 'warden-client', git: 'https://github.com/cloudfoundry/warden.git'
 gem 'warden-protocol', git: 'https://github.com/cloudfoundry/warden.git'
 
-gem 'nats', '>= 0.5.0.beta.12', '< 0.6', require: 'nats/client'
-gem 'rack', require: %w[rack/utils rack/mime]
+gem 'nats', '>= 0.5.0', '< 0.6', require: 'nats/client'
+gem 'rack', '>= 2.2.20', require: %w[rack/utils rack/mime]
 gem 'rake'
-gem 'thin'
+gem 'thin', '>= 1.7.0'
 gem 'yajl-ruby', require: %w[yajl yajl/json_gem]
 gem 'grape', git: 'https://github.com/intridea/grape.git'
 
-gem 'vcap_common'
-gem 'steno', '~> 1.1.0'
+gem 'vcap_common', '>= 4.0.3'
+gem 'steno', '~> 1.2.2'
 
 gem 'uuidtools'
 gem 'nokogiri', '~> 1.6.2'
@@ -32,11 +32,11 @@ group :test do
   gem 'foreman'
   gem 'net-ssh'
   gem 'patron'
-  gem 'rack-test'
+  gem 'rack-test', '>= 0.6.2'
   gem 'rspec'
   gem 'rspec-fire', require: false
   gem 'rubyzip'
-  gem 'sinatra'
+  gem 'sinatra', '>= 2.0.0'
   gem 'timecop'
   gem 'webmock'
 end
